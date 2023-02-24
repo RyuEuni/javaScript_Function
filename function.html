@@ -8,5 +8,32 @@
 </head>
 <body>
   
+  <script>
+    function arithmeatic(leftValue, operator, rightValue){
+      let re = 0;
+
+      if(operator === "+"){
+        re = leftValue + rightValue;
+      }
+      else if(operator === "-"){
+        re = leftValue - rightValue;
+      }
+      else if(operator === "*"){
+        re = leftValue * rightValue;
+      }
+      else if(operator === "/"){
+        re = leftValue / rightValue;
+      }
+      else{
+        re = "값을 다시 확인해 주세요"
+      }
+
+      return re;
+    }
+
+    let arit = arithmeatic(2,"+",4);
+    console.log(arit);
+
+  </script>
 </body>
 </html>
