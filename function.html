@@ -7,6 +7,29 @@
   <title>Document</title>
 </head>
 <body>
-  
+  <script>
+    let rubin = 1; // 메모리를 확보했다.
+    console.log(rubin);
+
+    rubin = "바보";
+    console.log(rubin);
+
+    function valueChange(a, b ,c){ //-> 함수 선언문
+      if(typeof(a) === "string"){
+        if(typeof(a) === "string"){
+          if(typeof(a) === "string"){
+            return a + b + c; //반환값
+          }
+        }
+      }
+      else{
+        return "문자를 입력해주세요";
+      }
+    }
+
+    rubin = valueChange(1,2,6+3); //호출
+    console.log(rubin);
+    
+  </script>
 </body>
 </html>
