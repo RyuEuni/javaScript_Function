@@ -7,29 +7,34 @@
   <title>Document</title>
 </head>
 <body>
+  <h1></h1>
   <script>
-    let rubin = 1; // 메모리를 확보했다.
-    console.log(rubin);
+    function fun(val1, val2){
+      let clr;
 
-    rubin = "바보";
-    console.log(rubin);
-
-    function valueChange(a, b ,c){ //-> 함수 선언문
-      if(typeof(a) === "string"){
-        if(typeof(a) === "string"){
-          if(typeof(a) === "string"){
-            return a + b + c; //반환값
-          }
-        }
+      if(val1 % val2 < 1){
+        clr = "yellow";
       }
       else{
-        return "문자를 입력해주세요";
+        clr = "green";
       }
+      return clr;
     }
 
-    rubin = valueChange(1,2,6+3); //호출
-    console.log(rubin);
+    let n = 10;
+    let h = document.getElementsByTagName('h1');
+    let divSet;
+    let i; 
     
+    for(i = 0; i < n; i++){
+      divSet = document.createElement('li');
+      divSet.textContent = "----'-'----"
+      h.appendChild(divSet); // 이런식으로 자식을 여러개 넣어준거 같은데.. 왜 안되지..?
+    }
+    console.dir(h);
+    h.textContent = "^_^";
+    // document.body.appendChild(h);
+
   </script>
 </body>
 </html>
