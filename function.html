@@ -7,6 +7,34 @@
   <title>Document</title>
 </head>
 <body>
-  
+  <h1></h1>
+  <script>
+    function fun(val1, val2){
+      let clr;
+
+      if(val1 % val2 < 1){
+        clr = "yellow";
+      }
+      else{
+        clr = "green";
+      }
+      return clr;
+    }
+
+    let n = 10;
+    let h = document.getElementsByTagName('h1');
+    let divSet;
+    let i; 
+    
+    for(i = 0; i < n; i++){
+      divSet = document.createElement('li');
+      divSet.textContent = "----'-'----"
+      h.appendChild(divSet); // 이런식으로 자식을 여러개 넣어준거 같은데.. 왜 안되지..?
+    }
+    console.dir(h);
+    h.textContent = "^_^";
+    // document.body.appendChild(h);
+
+  </script>
 </body>
 </html>
